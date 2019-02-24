@@ -1,4 +1,11 @@
-import { Component, NgModule, Input, OnInit, OnChanges } from "@angular/core";
+import {
+  Component,
+  NgModule,
+  Input,
+  OnInit,
+  OnChanges,
+  ChangeDetectionStrategy
+} from "@angular/core";
 import { BrowserModule } from "@angular/platform-browser";
 import { ApiService } from "./ApiService";
 
@@ -20,7 +27,8 @@ export class HeaderComponent {}
     <td>{{ item.name }}</td>
     <td>{{ item.score }}</td>
     <td><input size="7" (input)="saveValue($event)" [value]="note" /></td>
-  `
+  `,
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class RowComponent implements OnChanges {
   @Input("item-detail") item;
@@ -67,7 +75,7 @@ export class AppComponent implements OnInit {
   constructor(private apiService: ApiService) {}
   ngOnInit() {
     this.apiService.handleChanges(changes => {
-      this.items = this.calcScore(changes);
+      this.items = [...this.calcScore(changes)];
     });
   }
   calcScore(items) {
