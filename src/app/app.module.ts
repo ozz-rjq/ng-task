@@ -37,16 +37,18 @@ export class RowComponent implements OnChanges {
   note = "";
 
   ngOnChanges() {
-    this.note = this.isValueSet() ? localStorage.getItem(this.itemName()) : "";
+    this.note = this.isValueSet()
+      ? sessionStorage.getItem(this.itemName())
+      : "";
   }
 
   saveValue({ target }) {
     this.note = target.value;
-    localStorage.setItem(this.itemName(), this.note);
+    sessionStorage.setItem(this.itemName(), this.note);
   }
 
   isValueSet() {
-    return localStorage.getItem(this.itemName());
+    return sessionStorage.getItem(this.itemName());
   }
 
   itemName() {
