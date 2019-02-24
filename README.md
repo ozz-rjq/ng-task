@@ -1,27 +1,35 @@
-# NgTask
+# NgTestTask
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.3.
+======
 
-## Development server
+Test task for Middle Javascript developer (Angular 2+)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Application implements table that gets data from "ApiService" (its implementation should not be changed). Every 5 seconds service
+sends the same re-sorted list.
 
-## Code scaffolding
+Problem: value entered in "Note" field dissapears after re-sorting.
+Task: entered value should stay on the line with the same number on which it was entered before re-sorting.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Actual behavior
+Expected behavior
 
-## Build
+Additional task: how can AppComponent be optimized using different Angular change detection strategies? Implement this optimization and describe one of the optimization technics in the comments section.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+My solution: // link will be here
 
-## Running unit tests
+======
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Original text (in russian):
+Приложение реализует таблицу, которую получает через «ApiService» (его реализацию изменять не нужно). Каждые 5 секунд сервис присылает один и тот же пересортированный список.
 
-## Running end-to-end tests
+Проблема: при пересортировке слетает значение, введённое в поле «Note».
+Задача: нужно сделать так, чтобы введённое значение после пересортировки сохранилось на строке с тем же номером (№), что и до сортировки.
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+Актуальное поведение
+Ожидаемое поведение
 
-## Further help
+Нужно исправить проблему и написать в комментариях, в чём она заключалась.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Дополнительное задание, которое сократит количество вопросов на собеседовании: как можно оптимизировать AppComponent с точки зрения работы change-detection? Реализуйте предложенную оптимизацию и расскажите об одном или нескольких способах оптимизации в комментарии.
+
+Моё решение: // ссылка будет здесь
