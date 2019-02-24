@@ -19,13 +19,32 @@ export class HeaderComponent {}
     <td>{{ item.id }}</td>
     <td>{{ item.name }}</td>
     <td>{{ item.score }}</td>
-    <td><input size="7" /></td>
+    <td><input size="7" (input)="saveValue($event)" [value]="note" /></td>
   `
 })
 export class RowComponent implements OnChanges {
   @Input("item-detail") item;
 
-  ngOnChanges() {}
+  // my solution goes here ---
+  note = "";
+
+  ngOnChanges() {
+    this.note = this.isValueSet() ? localStorage.getItem(this.itemName()) : "";
+  }
+
+  saveValue({ target }) {
+    this.note = target.value;
+    localStorage.setItem(this.itemName(), this.note);
+  }
+
+  isValueSet() {
+    return localStorage.getItem(this.itemName());
+  }
+
+  itemName() {
+    return `item-${this.item.id}`;
+  }
+  // my solution ends here ---
 }
 
 @Component({
