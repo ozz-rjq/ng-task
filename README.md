@@ -16,7 +16,7 @@ Task: entered value should stay on the line with the same number on which it was
 
 Additional task: how can AppComponent be optimized using different Angular change detection strategies? Implement this optimization and describe one of the optimization technics in the comments section.
 
-My solution: <a href="https://github.com/ozz-rjq/ng-task/blob/08678a92594fcfce2e560f3480cb3f1dfa99c49e/src/app/app.module.ts#L36" target="_blank">Review</a>
+My solution: <a href="https://github.com/ozz-rjq/ng-task/blob/83fdb908e8974892584e40ac401b842ae795eff6/src/app/app.module.ts#L36" target="_blank">Review</a>
 
 ======
 
@@ -34,4 +34,4 @@ Original text (in russian):
 
 Дополнительное задание, которое сократит количество вопросов на собеседовании: как можно оптимизировать AppComponent с точки зрения работы change-detection? Реализуйте предложенную оптимизацию и расскажите об одном или нескольких способах оптимизации в комментарии.
 
-Моё решение: <a href="https://github.com/ozz-rjq/ng-task/blob/08678a92594fcfce2e560f3480cb3f1dfa99c49e/src/app/app.module.ts#L36" target="_blank">Посмотреть</a>
+Моё решение: <a href="https://github.com/ozz-rjq/ng-task/blob/83fdb908e8974892584e40ac401b842ae795eff6/src/app/app.module.ts#L36" target="_blank">Посмотреть</a>
