@@ -11,7 +11,8 @@ Problem: value entered in "Note" field dissapears after re-sorting.
 Task: entered value should stay on the line with the same number on which it was entered before re-sorting.
 
 <a href="https://mznpk1k6jj.codesandbox.io/" target="_blank">Actual behavior</a>
-Expected behavior
+<br>
+<a href="https://734qx193vj.codesandbox.io/" target="_blank">Expected behavior</a>
 
 Additional task: how can AppComponent be optimized using different Angular change detection strategies? Implement this optimization and describe one of the optimization technics in the comments section.
 
@@ -26,7 +27,8 @@ Original text (in russian):
 Задача: нужно сделать так, чтобы введённое значение после пересортировки сохранилось на строке с тем же номером (№), что и до сортировки.
 
 <a href="https://mznpk1k6jj.codesandbox.io/" target="_blank">Актуальное поведение</a>
-Ожидаемое поведение
+<br>
+<a href="https://734qx193vj.codesandbox.io/" target="_blank">Ожидаемое поведение</a>
 
 Нужно исправить проблему и написать в комментариях, в чём она заключалась.
 
